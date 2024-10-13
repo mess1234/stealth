@@ -1,0 +1,149 @@
+\hypertarget{frontend_8h}{}\doxysection{frontend.\+h File Reference}
+\label{frontend_8h}\index{frontend.h@{frontend.h}}
+
+
+This file take care of all graphic design of the game.  
+
+
+{\ttfamily \#include \char`\"{}room.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}guard.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$MLV/\+MLV\+\_\+all.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__InputData}{\+\_\+\+Input\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{frontend_8h_a997d6a5201892b8b4a61b40423cf697c}\label{frontend_8h_a997d6a5201892b8b4a61b40423cf697c}} 
+\#define {\bfseries CELL\+\_\+\+SIDE}~20 /$\ast$ sidelength of a cell in pixels $\ast$/
+\item 
+\mbox{\Hypertarget{frontend_8h_a5473cf64fa979b48335079c99532e243}\label{frontend_8h_a5473cf64fa979b48335079c99532e243}} 
+\#define {\bfseries WINDOW\+\_\+\+HEIGHT}~(CELL\+\_\+\+SIDE $\ast$ ROOM\+\_\+\+HEIGHT)
+\item 
+\mbox{\Hypertarget{frontend_8h_a498d9f026138406895e9a34b504ac6a6}\label{frontend_8h_a498d9f026138406895e9a34b504ac6a6}} 
+\#define {\bfseries WINDOW\+\_\+\+WIDTH}~(CELL\+\_\+\+SIDE $\ast$ ROOM\+\_\+\+WIDTH)
+\item 
+\mbox{\Hypertarget{frontend_8h_ad27df8516d357659fb3181edcda549ab}\label{frontend_8h_ad27df8516d357659fb3181edcda549ab}} 
+\#define {\bfseries FRAMERATE}~60
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{frontend_8h_aac8ba5b94a928e3295dfa706019f8799}\label{frontend_8h_aac8ba5b94a928e3295dfa706019f8799}} 
+typedef struct \mbox{\hyperlink{struct__InputData}{\+\_\+\+Input\+Data}} {\bfseries Input\+Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{frontend_8h_a6bfd188ec52325b47c85a2045bcea62e}{get\+\_\+user\+\_\+input}} (\mbox{\hyperlink{struct__InputData}{Input\+Data}} $\ast$input\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Get user input data and write it to input\+\_\+p. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{frontend_8h_afdf8a56f5dbb0cc35fbf18aff32bfa67}{draw\+\_\+frame}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Player}{Player}} $\ast$player\+\_\+p, \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$guards)
+\begin{DoxyCompactList}\small\item\em Draw one frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{frontend_8h_af0db854123f902c4389f9cb84faadce1}{\+\_\+draw\+\_\+start\+\_\+menu}} (void)
+\begin{DoxyCompactList}\small\item\em Draw first loading game menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{frontend_8h_aff2153a686ba4cc9e82365d213a083fa}{\+\_\+draw\+\_\+end\+\_\+win}} (bool $\ast$quit, bool $\ast$restart, int state, bool $\ast$rgstr)
+\begin{DoxyCompactList}\small\item\em Draw first loading game menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{frontend_8h_ab398ee51df0e10c4debb942a7ea7bd51}{draw\+\_\+quit\+\_\+restart}} ()
+\begin{DoxyCompactList}\small\item\em Draw quit and restart buttons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file take care of all graphic design of the game. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{frontend_8h_aff2153a686ba4cc9e82365d213a083fa}\label{frontend_8h_aff2153a686ba4cc9e82365d213a083fa}} 
+\index{frontend.h@{frontend.h}!\_draw\_end\_win@{\_draw\_end\_win}}
+\index{\_draw\_end\_win@{\_draw\_end\_win}!frontend.h@{frontend.h}}
+\doxysubsubsection{\texorpdfstring{\_draw\_end\_win()}{\_draw\_end\_win()}}
+{\footnotesize\ttfamily void \+\_\+draw\+\_\+end\+\_\+win (\begin{DoxyParamCaption}\item[{bool $\ast$}]{quit,  }\item[{bool $\ast$}]{restart,  }\item[{int}]{state,  }\item[{bool $\ast$}]{rgstr }\end{DoxyParamCaption})}
+
+
+
+Draw first loading game menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quit} & Boolean values to determine if player wished to quit the game \\
+\hline
+{\em restart} & Boolean values to determine if player wished to restart the game~\newline
+(play again) \\
+\hline
+{\em rgstr} & register situation on or off \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{frontend_8h_af0db854123f902c4389f9cb84faadce1}\label{frontend_8h_af0db854123f902c4389f9cb84faadce1}} 
+\index{frontend.h@{frontend.h}!\_draw\_start\_menu@{\_draw\_start\_menu}}
+\index{\_draw\_start\_menu@{\_draw\_start\_menu}!frontend.h@{frontend.h}}
+\doxysubsubsection{\texorpdfstring{\_draw\_start\_menu()}{\_draw\_start\_menu()}}
+{\footnotesize\ttfamily void \+\_\+draw\+\_\+start\+\_\+menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Draw first loading game menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{frontend_8h_afdf8a56f5dbb0cc35fbf18aff32bfa67}\label{frontend_8h_afdf8a56f5dbb0cc35fbf18aff32bfa67}} 
+\index{frontend.h@{frontend.h}!draw\_frame@{draw\_frame}}
+\index{draw\_frame@{draw\_frame}!frontend.h@{frontend.h}}
+\doxysubsubsection{\texorpdfstring{draw\_frame()}{draw\_frame()}}
+{\footnotesize\ttfamily void draw\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Player}{Player}} $\ast$}]{player\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$}]{guards }\end{DoxyParamCaption})}
+
+
+
+Draw one frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & pointer to the room \\
+\hline
+{\em player\+\_\+p} & pointer to the player \\
+\hline
+{\em guards} & array containing the guards \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{frontend_8h_ab398ee51df0e10c4debb942a7ea7bd51}\label{frontend_8h_ab398ee51df0e10c4debb942a7ea7bd51}} 
+\index{frontend.h@{frontend.h}!draw\_quit\_restart@{draw\_quit\_restart}}
+\index{draw\_quit\_restart@{draw\_quit\_restart}!frontend.h@{frontend.h}}
+\doxysubsubsection{\texorpdfstring{draw\_quit\_restart()}{draw\_quit\_restart()}}
+{\footnotesize\ttfamily int draw\+\_\+quit\+\_\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw quit and restart buttons. 
+
+\begin{DoxyReturn}{Returns}
+Function returns 1 if restart button pressed, 2 if quit button pressed~\newline
+and 0 if neither of them is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{frontend_8h_a6bfd188ec52325b47c85a2045bcea62e}\label{frontend_8h_a6bfd188ec52325b47c85a2045bcea62e}} 
+\index{frontend.h@{frontend.h}!get\_user\_input@{get\_user\_input}}
+\index{get\_user\_input@{get\_user\_input}!frontend.h@{frontend.h}}
+\doxysubsubsection{\texorpdfstring{get\_user\_input()}{get\_user\_input()}}
+{\footnotesize\ttfamily void get\+\_\+user\+\_\+input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__InputData}{Input\+Data}} $\ast$}]{input\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Get user input data and write it to input\+\_\+p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+p} & address where input will be stored \\
+\hline
+\end{DoxyParams}

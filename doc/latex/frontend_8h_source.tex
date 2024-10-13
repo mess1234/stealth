@@ -1,0 +1,35 @@
+\hypertarget{frontend_8h_source}{}\doxysection{frontend.\+h}
+\mbox{\hyperlink{frontend_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_FRONTEND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_FRONTEND\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{room_8h}{room.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{player_8h}{player.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{guard_8h}{guard.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <MLV/MLV\_all.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ CELL\_SIDE\ \ \ \ \ \ \ 20\ }\textcolor{comment}{/*\ sidelength\ of\ a\ cell\ in\ pixels\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ WINDOW\_HEIGHT\ \ \ (CELL\_SIDE\ *\ ROOM\_HEIGHT)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ WINDOW\_WIDTH\ \ \ \ (CELL\_SIDE\ *\ ROOM\_WIDTH)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ FRAMERATE\ \ \ \ \ \ \ 60}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct__InputData}{\_InputData}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ MLV\_Event\ event;}
+\DoxyCodeLine{00023\ \ \ \ \ MLV\_Keyboard\_button\ key;}
+\DoxyCodeLine{00024\ \ \ \ \ MLV\_Button\_state\ state;}
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{struct__InputData}{InputData}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{frontend_8h_a6bfd188ec52325b47c85a2045bcea62e}{get\_user\_input}}(\mbox{\hyperlink{struct__InputData}{InputData}}\ *input\_p);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{frontend_8h_afdf8a56f5dbb0cc35fbf18aff32bfa67}{draw\_frame}}(\mbox{\hyperlink{struct__Room}{Room}}\ *room\_p,\ \mbox{\hyperlink{struct__Player}{Player}}\ *player\_p,\ \mbox{\hyperlink{struct__Guard}{Guard}}\ *guards);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{frontend_8h_af0db854123f902c4389f9cb84faadce1}{\_draw\_start\_menu}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{frontend_8h_aff2153a686ba4cc9e82365d213a083fa}{\_draw\_end\_win}}(\textcolor{keywordtype}{bool}\ *quit,\ \textcolor{keywordtype}{bool}\ *restart,\ \textcolor{keywordtype}{int}\ state,\ \textcolor{keywordtype}{bool}\ *rgstr);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{frontend_8h_ab398ee51df0e10c4debb942a7ea7bd51}{draw\_quit\_restart}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_FRONTEND\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

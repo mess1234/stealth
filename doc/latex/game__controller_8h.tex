@@ -1,0 +1,98 @@
+\hypertarget{game__controller_8h}{}\doxysection{game\+\_\+controller.\+h File Reference}
+\label{game__controller_8h}\index{game\_controller.h@{game\_controller.h}}
+
+
+File taking care of game controle.  
+
+
+{\ttfamily \#include \char`\"{}room.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}guard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}frontend.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game__controller_8h_a2d23ae36f2fa206db44ad5432baa6a57}{init\+\_\+game}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Player}{Player}} $\ast$player\+\_\+p, \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$$\ast$guards\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Initialise the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__controller_8h_ae0e6b985c0903021cd8cb06447665d1b}{player\+\_\+action}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Player}{Player}} $\ast$pl, \mbox{\hyperlink{struct__InputData}{Input\+Data}} $\ast$input\+\_\+p, bool $\ast$quit)
+\begin{DoxyCompactList}\small\item\em Determine player action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__controller_8h_ab5c27299f7dbfc3a050e72d91cf1e081}{move\+\_\+guards}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$guards)
+\begin{DoxyCompactList}\small\item\em Moving guards inside room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File taking care of game controle. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__controller_8h_a2d23ae36f2fa206db44ad5432baa6a57}\label{game__controller_8h_a2d23ae36f2fa206db44ad5432baa6a57}} 
+\index{game\_controller.h@{game\_controller.h}!init\_game@{init\_game}}
+\index{init\_game@{init\_game}!game\_controller.h@{game\_controller.h}}
+\doxysubsubsection{\texorpdfstring{init\_game()}{init\_game()}}
+{\footnotesize\ttfamily int init\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Player}{Player}} $\ast$}]{player\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$$\ast$}]{guards\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Initialise the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & Pointer to board rooms informations \\
+\hline
+{\em player\+\_\+p} & Pointer to player informations \\
+\hline
+{\em guards\+\_\+p} & 2D array of guards \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if issues creating cells~\newline
+and 2 if issues creating guards, 0 is returned if no errors occured. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__controller_8h_ab5c27299f7dbfc3a050e72d91cf1e081}\label{game__controller_8h_ab5c27299f7dbfc3a050e72d91cf1e081}} 
+\index{game\_controller.h@{game\_controller.h}!move\_guards@{move\_guards}}
+\index{move\_guards@{move\_guards}!game\_controller.h@{game\_controller.h}}
+\doxysubsubsection{\texorpdfstring{move\_guards()}{move\_guards()}}
+{\footnotesize\ttfamily void move\+\_\+guards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$}]{guards }\end{DoxyParamCaption})}
+
+
+
+Moving guards inside room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & Pointer to room \\
+\hline
+{\em guards} & pointer to guard \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__controller_8h_ae0e6b985c0903021cd8cb06447665d1b}\label{game__controller_8h_ae0e6b985c0903021cd8cb06447665d1b}} 
+\index{game\_controller.h@{game\_controller.h}!player\_action@{player\_action}}
+\index{player\_action@{player\_action}!game\_controller.h@{game\_controller.h}}
+\doxysubsubsection{\texorpdfstring{player\_action()}{player\_action()}}
+{\footnotesize\ttfamily void player\+\_\+action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Player}{Player}} $\ast$}]{pl,  }\item[{\mbox{\hyperlink{struct__InputData}{Input\+Data}} $\ast$}]{input\+\_\+p,  }\item[{bool $\ast$}]{quit }\end{DoxyParamCaption})}
+
+
+
+Determine player action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & Pointer to room \\
+\hline
+{\em pl} & Pointer to player informations \\
+\hline
+{\em input\+\_\+p} & pointer to player input \\
+\hline
+{\em quit} & Pointer to quit option (if player decides to quit) \\
+\hline
+\end{DoxyParams}

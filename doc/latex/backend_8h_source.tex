@@ -1,0 +1,28 @@
+\hypertarget{backend_8h_source}{}\doxysection{backend.\+h}
+\mbox{\hyperlink{backend_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_BACKEND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_BACKEND\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vector_8h}{vector.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ V\ 0.5}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \_Direction}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ RIGHT,}
+\DoxyCodeLine{00018\ \ \ \ \ UP,}
+\DoxyCodeLine{00019\ \ \ \ \ LEFT,}
+\DoxyCodeLine{00020\ \ \ \ \ DOWN}
+\DoxyCodeLine{00021\ \}\ Direction;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{backend_8h_a6f2e783d56598a129a2cf0ba8a37ae2f}{rand\_int}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{backend_8h_ada3529f1531537a71d77996cfd602ac5}{rand\_double}}(\textcolor{keywordtype}{double}\ min,\ \textcolor{keywordtype}{double}\ sup);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00048\ \mbox{\hyperlink{struct__Vector}{Vector}}\ \mbox{\hyperlink{backend_8h_a1b8a66f89c4139f45ba057d57327edfa}{dir\_to\_vec}}(Direction\ dir);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{backend_8h_a89170eaadcf7f0d6450528abf3459198}{lerp}}(\textcolor{keywordtype}{double}\ start,\ \textcolor{keywordtype}{double}\ end,\ \textcolor{keywordtype}{double}\ t);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_BACKEND\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

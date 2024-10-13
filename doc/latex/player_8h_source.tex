@@ -1,0 +1,30 @@
+\hypertarget{player_8h_source}{}\doxysection{player.\+h}
+\mbox{\hyperlink{player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_PLAYER\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{backend_8h}{backend.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vector_8h}{vector.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PLAYER\_START\_SPEED\ 0.1}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PLAYER\_NORMAL\_MAX\_SPEED\ 0.9}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ PLAYER\_SWIFT\_MAX\_SPEED\ 1.2}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ PLAYER\_ACCEL\ 0.03}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct__Player}{\_Player}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct__Vector}{Vector}}\ position;}
+\DoxyCodeLine{00022\ \ \ \ \ Direction\ direction;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ time\_spent;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ mana;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ visible;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ overloaded;}
+\DoxyCodeLine{00028\ \}\ \mbox{\hyperlink{struct__Player}{Player}};}
+\DoxyCodeLine{00034\ \mbox{\hyperlink{struct__Player}{Player}}\ \mbox{\hyperlink{player_8h_a2e5535c0b9ebb62c506c6c38cbbbcefa}{init\_player}}();}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{player_8h_a3049e4da08e79345f5899c13fbf90ad7}{player\_win}}(\mbox{\hyperlink{struct__Player}{Player}}\ player);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PLAYER\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,161 @@
+\hypertarget{room_8h}{}\doxysection{room.\+h File Reference}
+\label{room_8h}\index{room.h@{room.h}}
+
+
+Room module.  
+
+
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Room}{\+\_\+\+Room}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{room_8h_a0d31e48b3a90b7260545cac93397b05b}\label{room_8h_a0d31e48b3a90b7260545cac93397b05b}} 
+\#define {\bfseries MIN\+\_\+\+SIDE}~9
+\item 
+\mbox{\Hypertarget{room_8h_a203e10a5bf45bec718d57cc5c5c4763e}\label{room_8h_a203e10a5bf45bec718d57cc5c5c4763e}} 
+\#define {\bfseries DOOR\+\_\+\+SIZE}~3
+\item 
+\mbox{\Hypertarget{room_8h_ac9ca02d339396f29936ce044ccad446f}\label{room_8h_ac9ca02d339396f29936ce044ccad446f}} 
+\#define {\bfseries NB\+\_\+\+GUARDS}~5
+\item 
+\mbox{\Hypertarget{room_8h_aca01143866add6425d72298f409c4b94}\label{room_8h_aca01143866add6425d72298f409c4b94}} 
+\#define {\bfseries NB\+\_\+\+RELIC}~3
+\item 
+\mbox{\Hypertarget{room_8h_a1d183b9476989a784a4318f9a8725d31}\label{room_8h_a1d183b9476989a784a4318f9a8725d31}} 
+\#define {\bfseries ROOM\+\_\+\+HEIGHT}~45
+\item 
+\mbox{\Hypertarget{room_8h_a24b76562cc930ac36b7150b422528946}\label{room_8h_a24b76562cc930ac36b7150b422528946}} 
+\#define {\bfseries ROOM\+\_\+\+WIDTH}~60
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{room_8h_a8a0c44f0bda65de81e87d2fee2998b49}\label{room_8h_a8a0c44f0bda65de81e87d2fee2998b49}} 
+typedef enum \+\_\+\+Cell {\bfseries Cell}
+\item 
+\mbox{\Hypertarget{room_8h_acc60bf66fbe5761810d4300caeec7cb5}\label{room_8h_acc60bf66fbe5761810d4300caeec7cb5}} 
+typedef struct \mbox{\hyperlink{struct__Room}{\+\_\+\+Room}} {\bfseries Room}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{room_8h_aacd35785134375f0b2c05a12f2668db4}\label{room_8h_aacd35785134375f0b2c05a12f2668db4}} 
+enum {\bfseries \+\_\+\+Cell} \{ \newline
+{\bfseries MANA\+\_\+\+ON}
+, {\bfseries MANA\+\_\+\+OFF}
+, {\bfseries RELIC\+\_\+\+ON}
+, {\bfseries RELIC\+\_\+\+OFF}
+, \newline
+{\bfseries WALL}
+, {\bfseries DOOR}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Cell $\ast$$\ast$ \mbox{\hyperlink{room_8h_a3db7c9eab4100bb34e73ae8f61e33e79}{create\+\_\+room\+\_\+cells}} (void)
+\begin{DoxyCompactList}\small\item\em Create a room cells object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{room_8h_a6c0723bcf96ce5ac26f3f79b16450401}{free\+\_\+room\+\_\+cells}} (Cell $\ast$$\ast$cells)
+\begin{DoxyCompactList}\small\item\em Freeing memory of Cells. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{room_8h_accba460714227adba4820df4737037ae}{place\+\_\+walls}} (Cell $\ast$$\ast$cells)
+\begin{DoxyCompactList}\small\item\em Place walls inside Room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{room_8h_af014d36979b2d1d17fbba0afca5f0eaf}{place\+\_\+relics}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Vector}{Vector}} player\+\_\+start)
+\begin{DoxyCompactList}\small\item\em Placing reclics inside of Room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{room_8h_ab2df422271e70f74b2eaa1ade14b99dd}{clean\+\_\+doors}} (Cell $\ast$$\ast$cells)
+\begin{DoxyCompactList}\small\item\em Making doors in walls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Room module. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{room_8h_ab2df422271e70f74b2eaa1ade14b99dd}\label{room_8h_ab2df422271e70f74b2eaa1ade14b99dd}} 
+\index{room.h@{room.h}!clean\_doors@{clean\_doors}}
+\index{clean\_doors@{clean\_doors}!room.h@{room.h}}
+\doxysubsubsection{\texorpdfstring{clean\_doors()}{clean\_doors()}}
+{\footnotesize\ttfamily void clean\+\_\+doors (\begin{DoxyParamCaption}\item[{Cell $\ast$$\ast$}]{cells }\end{DoxyParamCaption})}
+
+
+
+Making doors in walls. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cells} & 2D Array of Cells. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{room_8h_a3db7c9eab4100bb34e73ae8f61e33e79}\label{room_8h_a3db7c9eab4100bb34e73ae8f61e33e79}} 
+\index{room.h@{room.h}!create\_room\_cells@{create\_room\_cells}}
+\index{create\_room\_cells@{create\_room\_cells}!room.h@{room.h}}
+\doxysubsubsection{\texorpdfstring{create\_room\_cells()}{create\_room\_cells()}}
+{\footnotesize\ttfamily Cell $\ast$$\ast$ create\+\_\+room\+\_\+cells (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Create a room cells object. 
+
+\begin{DoxyReturn}{Returns}
+Cell$\ast$$\ast$ return 2D array of Cells 
+\end{DoxyReturn}
+\mbox{\Hypertarget{room_8h_a6c0723bcf96ce5ac26f3f79b16450401}\label{room_8h_a6c0723bcf96ce5ac26f3f79b16450401}} 
+\index{room.h@{room.h}!free\_room\_cells@{free\_room\_cells}}
+\index{free\_room\_cells@{free\_room\_cells}!room.h@{room.h}}
+\doxysubsubsection{\texorpdfstring{free\_room\_cells()}{free\_room\_cells()}}
+{\footnotesize\ttfamily void free\+\_\+room\+\_\+cells (\begin{DoxyParamCaption}\item[{Cell $\ast$$\ast$}]{cells }\end{DoxyParamCaption})}
+
+
+
+Freeing memory of Cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cells} & 2D array of Cells. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{room_8h_af014d36979b2d1d17fbba0afca5f0eaf}\label{room_8h_af014d36979b2d1d17fbba0afca5f0eaf}} 
+\index{room.h@{room.h}!place\_relics@{place\_relics}}
+\index{place\_relics@{place\_relics}!room.h@{room.h}}
+\doxysubsubsection{\texorpdfstring{place\_relics()}{place\_relics()}}
+{\footnotesize\ttfamily void place\+\_\+relics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{player\+\_\+start }\end{DoxyParamCaption})}
+
+
+
+Placing reclics inside of Room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & Pointer to room. \\
+\hline
+{\em player\+\_\+start} & Vector of player starting position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{room_8h_accba460714227adba4820df4737037ae}\label{room_8h_accba460714227adba4820df4737037ae}} 
+\index{room.h@{room.h}!place\_walls@{place\_walls}}
+\index{place\_walls@{place\_walls}!room.h@{room.h}}
+\doxysubsubsection{\texorpdfstring{place\_walls()}{place\_walls()}}
+{\footnotesize\ttfamily void place\+\_\+walls (\begin{DoxyParamCaption}\item[{Cell $\ast$$\ast$}]{cells }\end{DoxyParamCaption})}
+
+
+
+Place walls inside Room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cells} & 2D array of Cells. \\
+\hline
+\end{DoxyParams}

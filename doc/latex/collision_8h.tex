@@ -1,0 +1,50 @@
+\hypertarget{collision_8h}{}\doxysection{collision.\+h File Reference}
+\label{collision_8h}\index{collision.h@{collision.h}}
+
+
+This file take care of player collision with walls.  
+
+
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}room.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{collision_8h_a420234b42cadf9775b02031f3bbf8742}{compute\+\_\+collisions}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Player}{Player}} $\ast$player\+\_\+p, \mbox{\hyperlink{struct__Vector}{Vector}} $\ast$new\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Check wall collisions and update $\ast$new\+\_\+pos accordlingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file take care of player collision with walls. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{collision_8h_a420234b42cadf9775b02031f3bbf8742}\label{collision_8h_a420234b42cadf9775b02031f3bbf8742}} 
+\index{collision.h@{collision.h}!compute\_collisions@{compute\_collisions}}
+\index{compute\_collisions@{compute\_collisions}!collision.h@{collision.h}}
+\doxysubsubsection{\texorpdfstring{compute\_collisions()}{compute\_collisions()}}
+{\footnotesize\ttfamily void compute\+\_\+collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Player}{Player}} $\ast$}]{player\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}} $\ast$}]{new\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Check wall collisions and update $\ast$new\+\_\+pos accordlingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & pointer to the room \\
+\hline
+{\em player\+\_\+p} & pointer to the player (with old position) \\
+\hline
+{\em new\+\_\+pos} & new player position, ignoring wall collisions \\
+\hline
+\end{DoxyParams}

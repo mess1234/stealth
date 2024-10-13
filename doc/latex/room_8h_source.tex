@@ -1,0 +1,44 @@
+\hypertarget{room_8h_source}{}\doxysection{room.\+h}
+\mbox{\hyperlink{room_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_ROOM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_ROOM\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vector_8h}{vector.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ MIN\_SIDE\ 9}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ DOOR\_SIZE\ 3}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ NB\_GUARDS\ 5}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ NB\_RELIC\ 3}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ ROOM\_HEIGHT\ 45}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ ROOM\_WIDTH\ 60}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \_Cell}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ MANA\_ON,}
+\DoxyCodeLine{00023\ \ \ \ \ MANA\_OFF,}
+\DoxyCodeLine{00024\ \ \ \ \ RELIC\_ON,}
+\DoxyCodeLine{00025\ \ \ \ \ RELIC\_OFF,}
+\DoxyCodeLine{00026\ \ \ \ \ WALL,}
+\DoxyCodeLine{00027\ \ \ \ \ DOOR}
+\DoxyCodeLine{00028\ \}\ Cell;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct__Room}{\_Room}}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ Cell\ **cells;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ remaining\_relics;}
+\DoxyCodeLine{00034\ \}\ \mbox{\hyperlink{struct__Room}{Room}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ Cell\ **\mbox{\hyperlink{room_8h_a3db7c9eab4100bb34e73ae8f61e33e79}{create\_room\_cells}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a6c0723bcf96ce5ac26f3f79b16450401}{free\_room\_cells}}(Cell\ **cells);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_accba460714227adba4820df4737037ae}{place\_walls}}(Cell\ **cells);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_af014d36979b2d1d17fbba0afca5f0eaf}{place\_relics}}(\mbox{\hyperlink{struct__Room}{Room}}\ *room\_p,\ \mbox{\hyperlink{struct__Vector}{Vector}}\ player\_start);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_ab2df422271e70f74b2eaa1ade14b99dd}{clean\_doors}}(Cell\ **cells);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_ROOM\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

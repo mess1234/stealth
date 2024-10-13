@@ -1,0 +1,90 @@
+\hypertarget{player_8h}{}\doxysection{player.\+h File Reference}
+\label{player_8h}\index{player.h@{player.h}}
+
+
+Player module.  
+
+
+{\ttfamily \#include \char`\"{}backend.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Player}{\+\_\+\+Player}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{player_8h_a71d2bc5b048f8de4affc4b7352d1ee6e}\label{player_8h_a71d2bc5b048f8de4affc4b7352d1ee6e}} 
+\#define {\bfseries PLAYER\+\_\+\+START\+\_\+\+SPEED}~0.\+1
+\item 
+\mbox{\Hypertarget{player_8h_a1b2191c8b9e2fe863b141bb326357a3c}\label{player_8h_a1b2191c8b9e2fe863b141bb326357a3c}} 
+\#define {\bfseries PLAYER\+\_\+\+NORMAL\+\_\+\+MAX\+\_\+\+SPEED}~0.\+9
+\item 
+\mbox{\Hypertarget{player_8h_a6c5ddcbeab9aa9b09c870efa0aefbe02}\label{player_8h_a6c5ddcbeab9aa9b09c870efa0aefbe02}} 
+\#define {\bfseries PLAYER\+\_\+\+SWIFT\+\_\+\+MAX\+\_\+\+SPEED}~1.\+2
+\item 
+\mbox{\Hypertarget{player_8h_a71df7ec0cb199f8ae614e86988e43416}\label{player_8h_a71df7ec0cb199f8ae614e86988e43416}} 
+\#define {\bfseries PLAYER\+\_\+\+ACCEL}~0.\+03
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{player_8h_af30e2030635a69690f85e48bc6ef202f}\label{player_8h_af30e2030635a69690f85e48bc6ef202f}} 
+typedef struct \mbox{\hyperlink{struct__Player}{\+\_\+\+Player}} {\bfseries Player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct__Player}{Player}} \mbox{\hyperlink{player_8h_a2e5535c0b9ebb62c506c6c38cbbbcefa}{init\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Initialisation of player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_a3049e4da08e79345f5899c13fbf90ad7}{player\+\_\+win}} (\mbox{\hyperlink{struct__Player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Detection if player back to start room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Player module. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{player_8h_a2e5535c0b9ebb62c506c6c38cbbbcefa}\label{player_8h_a2e5535c0b9ebb62c506c6c38cbbbcefa}} 
+\index{player.h@{player.h}!init\_player@{init\_player}}
+\index{init\_player@{init\_player}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{init\_player()}{init\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Player}{Player}} init\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialisation of player. 
+
+\begin{DoxyReturn}{Returns}
+Player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a3049e4da08e79345f5899c13fbf90ad7}\label{player_8h_a3049e4da08e79345f5899c13fbf90ad7}} 
+\index{player.h@{player.h}!player\_win@{player\_win}}
+\index{player\_win@{player\_win}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_win()}{player\_win()}}
+{\footnotesize\ttfamily int player\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+Detection if player back to start room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 1 if player is back to init position and 0 if not. 
+\end{DoxyReturn}

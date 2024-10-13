@@ -1,0 +1,33 @@
+\hypertarget{guard_8h_source}{}\doxysection{guard.\+h}
+\mbox{\hyperlink{guard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_GUARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_GUARD\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{room_8h}{room.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{backend_8h}{backend.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vector_8h}{vector.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ NB\_GUARDS\ 5}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ GUARD\_CHANGE\ 50\ }\textcolor{comment}{/*\ probability\ =\ 1\ /\ GUARD\_CHANGE\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ GUARD\_NORMAL\_MIN\_VELOCITY\ 0.3}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ GUARD\_NORMAL\_MAX\_VELOCITY\ 0.8}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ GUARD\_NORMAL\_RANGE\ 4}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ GUARD\_PANIC\_VELOCITY\ 1.0}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ GUARD\_PANIC\_RANGE\ 6}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ GUARD\_PANIC\_DURATION\ 30}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct__Guard}{\_Guard}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{struct__Vector}{Vector}}\ position;}
+\DoxyCodeLine{00026\ \ \ \ \ Direction\ direction;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*Vector\ velocity;*/}}
+\DoxyCodeLine{00029\ \}\ \mbox{\hyperlink{struct__Guard}{Guard}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \mbox{\hyperlink{struct__Guard}{Guard}}\ *\mbox{\hyperlink{guard_8h_abf9971d69a14b5c11205c7aa7dca1ece}{create\_guards}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{guard_8h_ad68c9fd26474648a3d9053dc10bff86f}{init\_guards}}(\mbox{\hyperlink{struct__Room}{Room}}\ *room\_p,\ \mbox{\hyperlink{struct__Guard}{Guard}}\ *guards,\ \mbox{\hyperlink{struct__Vector}{Vector}}\ player\_start);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_GUARD\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

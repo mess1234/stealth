@@ -1,0 +1,227 @@
+\hypertarget{vector_8h}{}\doxysection{vector.\+h File Reference}
+\label{vector_8h}\index{vector.h@{vector.h}}
+
+
+Vector module.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Vector}{\+\_\+\+Vector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vector_8h_ab77952ba65ecab25409ab9188e1d3019}\label{vector_8h_ab77952ba65ecab25409ab9188e1d3019}} 
+typedef struct \mbox{\hyperlink{struct__Vector}{\+\_\+\+Vector}} {\bfseries Vector}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{vector_8h_a4a70e0c5a50a47380494f99b926041ae}{equals}} (\mbox{\hyperlink{struct__Vector}{Vector}} $\ast$v, \mbox{\hyperlink{struct__Vector}{Vector}} $\ast$w)
+\begin{DoxyCompactList}\small\item\em Test if two vectors are equals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_ad4489cb0f1b0158c8660512d80c0a8ab}{add}} (\mbox{\hyperlink{struct__Vector}{Vector}} v, \mbox{\hyperlink{struct__Vector}{Vector}} w)
+\begin{DoxyCompactList}\small\item\em Return the sum of v and w. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_afa02aec1d0e0f290e6ec61abfb6be2a9}{sub}} (\mbox{\hyperlink{struct__Vector}{Vector}} v, \mbox{\hyperlink{struct__Vector}{Vector}} w)
+\begin{DoxyCompactList}\small\item\em Return the difference of v and w. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_ad0dd83461f538ba3c59107d154f80d07}{scale}} (\mbox{\hyperlink{struct__Vector}{Vector}} v, double num)
+\begin{DoxyCompactList}\small\item\em Return v scaled by num. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_a42ccefea67ab30c0b09fc036ad381348}{rotate\+\_\+cw}} (\mbox{\hyperlink{struct__Vector}{Vector}} v)
+\begin{DoxyCompactList}\small\item\em Return v rotated 90° clockwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_a466bf4f6e3c9d409148e9abdd72b0dee}{rotate\+\_\+ccw}} (\mbox{\hyperlink{struct__Vector}{Vector}} v)
+\begin{DoxyCompactList}\small\item\em Return v rotated 90° counterclockwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{vector_8h_a87d93a595bbf4cb99eddcacf502cfb3e}{floored}} (\mbox{\hyperlink{struct__Vector}{Vector}} v)
+\begin{DoxyCompactList}\small\item\em Return v with truncated coordinates. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector_8h_a533f7b34eee08036fe38d9c73d9fd3f4}{norm}} (\mbox{\hyperlink{struct__Vector}{Vector}} v)
+\begin{DoxyCompactList}\small\item\em Return the norm of the vector v (== its distance to zero). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector_8h_a4396e46abd0f42cec0c6efbed7ec7789}{dist}} (\mbox{\hyperlink{struct__Vector}{Vector}} v, \mbox{\hyperlink{struct__Vector}{Vector}} w)
+\begin{DoxyCompactList}\small\item\em Return the euclidean distance between the points v and w. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vector module. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vector_8h_ad4489cb0f1b0158c8660512d80c0a8ab}\label{vector_8h_ad4489cb0f1b0158c8660512d80c0a8ab}} 
+\index{vector.h@{vector.h}!add@{add}}
+\index{add@{add}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{w }\end{DoxyParamCaption})}
+
+
+
+Return the sum of v and w. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+{\em w} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector v + w 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a4396e46abd0f42cec0c6efbed7ec7789}\label{vector_8h_a4396e46abd0f42cec0c6efbed7ec7789}} 
+\index{vector.h@{vector.h}!dist@{dist}}
+\index{dist@{dist}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{dist()}{dist()}}
+{\footnotesize\ttfamily double dist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{w }\end{DoxyParamCaption})}
+
+
+
+Return the euclidean distance between the points v and w. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+{\em w} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double $\vert$v -\/ w$\vert$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a4a70e0c5a50a47380494f99b926041ae}\label{vector_8h_a4a70e0c5a50a47380494f99b926041ae}} 
+\index{vector.h@{vector.h}!equals@{equals}}
+\index{equals@{equals}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily int equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}} $\ast$}]{v,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}} $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+Test if two vectors are equals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & pointer to a vector (must not be NULL) \\
+\hline
+{\em w} & pointer to a vector (must not be NULL) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if $\ast$v and $\ast$w are equals, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a87d93a595bbf4cb99eddcacf502cfb3e}\label{vector_8h_a87d93a595bbf4cb99eddcacf502cfb3e}} 
+\index{vector.h@{vector.h}!floored@{floored}}
+\index{floored@{floored}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{floored()}{floored()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} floored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Return v with truncated coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector \{floor(v.\+y), floor(v.\+x)\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a533f7b34eee08036fe38d9c73d9fd3f4}\label{vector_8h_a533f7b34eee08036fe38d9c73d9fd3f4}} 
+\index{vector.h@{vector.h}!norm@{norm}}
+\index{norm@{norm}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily double norm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Return the norm of the vector v (== its distance to zero). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double $\vert$v$\vert$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a466bf4f6e3c9d409148e9abdd72b0dee}\label{vector_8h_a466bf4f6e3c9d409148e9abdd72b0dee}} 
+\index{vector.h@{vector.h}!rotate\_ccw@{rotate\_ccw}}
+\index{rotate\_ccw@{rotate\_ccw}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_ccw()}{rotate\_ccw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} rotate\+\_\+ccw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Return v rotated 90° counterclockwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector \{-\/v.\+x, +v.\+y\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_a42ccefea67ab30c0b09fc036ad381348}\label{vector_8h_a42ccefea67ab30c0b09fc036ad381348}} 
+\index{vector.h@{vector.h}!rotate\_cw@{rotate\_cw}}
+\index{rotate\_cw@{rotate\_cw}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_cw()}{rotate\_cw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} rotate\+\_\+cw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Return v rotated 90° clockwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector \{+v.\+x, -\/v.\+y\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_ad0dd83461f538ba3c59107d154f80d07}\label{vector_8h_ad0dd83461f538ba3c59107d154f80d07}} 
+\index{vector.h@{vector.h}!scale@{scale}}
+\index{scale@{scale}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v,  }\item[{double}]{num }\end{DoxyParamCaption})}
+
+
+
+Return v scaled by num. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+{\em num} & a number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector num $\ast$ v 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector_8h_afa02aec1d0e0f290e6ec61abfb6be2a9}\label{vector_8h_afa02aec1d0e0f290e6ec61abfb6be2a9}} 
+\index{vector.h@{vector.h}!sub@{sub}}
+\index{sub@{sub}!vector.h@{vector.h}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{v,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{w }\end{DoxyParamCaption})}
+
+
+
+Return the difference of v and w. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a vector \\
+\hline
+{\em w} & a vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector v -\/ w 
+\end{DoxyReturn}

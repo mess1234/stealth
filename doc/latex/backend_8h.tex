@@ -1,0 +1,139 @@
+\hypertarget{backend_8h}{}\doxysection{backend.\+h File Reference}
+\label{backend_8h}\index{backend.h@{backend.h}}
+
+
+This file take care of all auxiliary functions needed for the rest of~\newline
+the moduls.  
+
+
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{backend_8h_af40a326b23c68a27cebe60f16634a2cb}\label{backend_8h_af40a326b23c68a27cebe60f16634a2cb}} 
+\#define {\bfseries V}~0.\+5
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{backend_8h_a992ec00cbaa34e33750f7f4b3d9308b6}\label{backend_8h_a992ec00cbaa34e33750f7f4b3d9308b6}} 
+typedef enum \+\_\+\+Direction {\bfseries Direction}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{backend_8h_ae04b4c017d1caf6fef38aaa5407bc5e2}\label{backend_8h_ae04b4c017d1caf6fef38aaa5407bc5e2}} 
+enum {\bfseries \+\_\+\+Direction} \{ {\bfseries RIGHT}
+, {\bfseries UP}
+, {\bfseries LEFT}
+, {\bfseries DOWN}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{backend_8h_a6f2e783d56598a129a2cf0ba8a37ae2f}{rand\+\_\+int}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Return an integer between a (inclusive) and b (exclusive). a must be less then b.\+The probability distribution is non uniform. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{backend_8h_ada3529f1531537a71d77996cfd602ac5}{rand\+\_\+double}} (double min, double sup)
+\begin{DoxyCompactList}\small\item\em Return a random number between 0 (inclusive) and sup (exclusive) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__Vector}{Vector}} \mbox{\hyperlink{backend_8h_a1b8a66f89c4139f45ba057d57327edfa}{dir\+\_\+to\+\_\+vec}} (Direction dir)
+\begin{DoxyCompactList}\small\item\em Return the unit vector corresponding to dir. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{backend_8h_a89170eaadcf7f0d6450528abf3459198}{lerp}} (double start, double end, double t)
+\begin{DoxyCompactList}\small\item\em Linear interpolation between two numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file take care of all auxiliary functions needed for the rest of~\newline
+the moduls. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{backend_8h_a1b8a66f89c4139f45ba057d57327edfa}\label{backend_8h_a1b8a66f89c4139f45ba057d57327edfa}} 
+\index{backend.h@{backend.h}!dir\_to\_vec@{dir\_to\_vec}}
+\index{dir\_to\_vec@{dir\_to\_vec}!backend.h@{backend.h}}
+\doxysubsubsection{\texorpdfstring{dir\_to\_vec()}{dir\_to\_vec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Vector}{Vector}} dir\+\_\+to\+\_\+vec (\begin{DoxyParamCaption}\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+
+
+Return the unit vector corresponding to dir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & a direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector a unit vector of the form \{+-\/1.\+0, +-\/1.\+0\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{backend_8h_a89170eaadcf7f0d6450528abf3459198}\label{backend_8h_a89170eaadcf7f0d6450528abf3459198}} 
+\index{backend.h@{backend.h}!lerp@{lerp}}
+\index{lerp@{lerp}!backend.h@{backend.h}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily double lerp (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{end,  }\item[{double}]{t }\end{DoxyParamCaption})}
+
+
+
+Linear interpolation between two numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & starting value \\
+\hline
+{\em end} & end value \\
+\hline
+{\em t} & proportion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double interpolated value, equal to start when t == 0, equal to end when t == 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{backend_8h_ada3529f1531537a71d77996cfd602ac5}\label{backend_8h_ada3529f1531537a71d77996cfd602ac5}} 
+\index{backend.h@{backend.h}!rand\_double@{rand\_double}}
+\index{rand\_double@{rand\_double}!backend.h@{backend.h}}
+\doxysubsubsection{\texorpdfstring{rand\_double()}{rand\_double()}}
+{\footnotesize\ttfamily double rand\+\_\+double (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{sup }\end{DoxyParamCaption})}
+
+
+
+Return a random number between 0 (inclusive) and sup (exclusive) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & minimum possible result (or max, if sup \texorpdfstring{$<$}{<}= min) \\
+\hline
+{\em sup} & upper bound of result (or lower bound, if sup \texorpdfstring{$<$}{<}= min) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double some number in \mbox{[}0, sup\mbox{[} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{backend_8h_a6f2e783d56598a129a2cf0ba8a37ae2f}\label{backend_8h_a6f2e783d56598a129a2cf0ba8a37ae2f}} 
+\index{backend.h@{backend.h}!rand\_int@{rand\_int}}
+\index{rand\_int@{rand\_int}!backend.h@{backend.h}}
+\doxysubsubsection{\texorpdfstring{rand\_int()}{rand\_int()}}
+{\footnotesize\ttfamily int rand\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Return an integer between a (inclusive) and b (exclusive). a must be less then b.\+The probability distribution is non uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & min value \\
+\hline
+{\em b} & max value + 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int an element of \{a, ..., b-\/1\} 
+\end{DoxyReturn}

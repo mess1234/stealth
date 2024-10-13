@@ -1,0 +1,53 @@
+\hypertarget{detect_8h}{}\doxysection{detect.\+h File Reference}
+\label{detect_8h}\index{detect.h@{detect.h}}
+
+
+This file take care of guards detection of player.  
+
+
+{\ttfamily \#include \char`\"{}guard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}room.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{detect_8h_a44f19bac19f6578cfa50dc7cf152099c}{check\+\_\+detection}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$guards, \mbox{\hyperlink{struct__Player}{Player}} $\ast$player\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Check if one of the guards can see the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file take care of guards detection of player. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{detect_8h_a44f19bac19f6578cfa50dc7cf152099c}\label{detect_8h_a44f19bac19f6578cfa50dc7cf152099c}} 
+\index{detect.h@{detect.h}!check\_detection@{check\_detection}}
+\index{check\_detection@{check\_detection}!detect.h@{detect.h}}
+\doxysubsubsection{\texorpdfstring{check\_detection()}{check\_detection()}}
+{\footnotesize\ttfamily int check\+\_\+detection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$}]{guards,  }\item[{\mbox{\hyperlink{struct__Player}{Player}} $\ast$}]{player\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Check if one of the guards can see the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & pointer to the room \\
+\hline
+{\em guards} & array containing the guards \\
+\hline
+{\em player\+\_\+p} & pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if one guard can see the player, 0 otherwise 
+\end{DoxyReturn}

@@ -1,0 +1,103 @@
+\hypertarget{guard_8h}{}\doxysection{guard.\+h File Reference}
+\label{guard_8h}\index{guard.h@{guard.h}}
+
+
+Guarde module.  
+
+
+{\ttfamily \#include \char`\"{}room.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}backend.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Guard}{\+\_\+\+Guard}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{guard_8h_ac9ca02d339396f29936ce044ccad446f}\label{guard_8h_ac9ca02d339396f29936ce044ccad446f}} 
+\#define {\bfseries NB\+\_\+\+GUARDS}~5
+\item 
+\mbox{\Hypertarget{guard_8h_a0ed616fb1b9d51fd6d8b741041010da6}\label{guard_8h_a0ed616fb1b9d51fd6d8b741041010da6}} 
+\#define {\bfseries GUARD\+\_\+\+CHANGE}~50 /$\ast$ probability = 1 / GUARD\+\_\+\+CHANGE $\ast$/
+\item 
+\mbox{\Hypertarget{guard_8h_a660a9044baa3387caf01f5daec711e3e}\label{guard_8h_a660a9044baa3387caf01f5daec711e3e}} 
+\#define {\bfseries GUARD\+\_\+\+NORMAL\+\_\+\+MIN\+\_\+\+VELOCITY}~0.\+3
+\item 
+\mbox{\Hypertarget{guard_8h_aa1410437b4630785427045e206ff98ef}\label{guard_8h_aa1410437b4630785427045e206ff98ef}} 
+\#define {\bfseries GUARD\+\_\+\+NORMAL\+\_\+\+MAX\+\_\+\+VELOCITY}~0.\+8
+\item 
+\mbox{\Hypertarget{guard_8h_a101278e9de4474b4c0a9e52a117a9c09}\label{guard_8h_a101278e9de4474b4c0a9e52a117a9c09}} 
+\#define {\bfseries GUARD\+\_\+\+NORMAL\+\_\+\+RANGE}~4
+\item 
+\mbox{\Hypertarget{guard_8h_a69586f1d28ba80b07c36a1e7079b4541}\label{guard_8h_a69586f1d28ba80b07c36a1e7079b4541}} 
+\#define {\bfseries GUARD\+\_\+\+PANIC\+\_\+\+VELOCITY}~1.\+0
+\item 
+\mbox{\Hypertarget{guard_8h_a08213536752ed177e42ddebbdd97b64c}\label{guard_8h_a08213536752ed177e42ddebbdd97b64c}} 
+\#define {\bfseries GUARD\+\_\+\+PANIC\+\_\+\+RANGE}~6
+\item 
+\mbox{\Hypertarget{guard_8h_ac0446f7385c6d3badf2719cb88a9da48}\label{guard_8h_ac0446f7385c6d3badf2719cb88a9da48}} 
+\#define {\bfseries GUARD\+\_\+\+PANIC\+\_\+\+DURATION}~30
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{guard_8h_a022ab9f67afea742a8d0ded06c733ab5}\label{guard_8h_a022ab9f67afea742a8d0ded06c733ab5}} 
+typedef struct \mbox{\hyperlink{struct__Guard}{\+\_\+\+Guard}} {\bfseries Guard}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$ \mbox{\hyperlink{guard_8h_abf9971d69a14b5c11205c7aa7dca1ece}{create\+\_\+guards}} (void)
+\begin{DoxyCompactList}\small\item\em Create a guards object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guard_8h_ad68c9fd26474648a3d9053dc10bff86f}{init\+\_\+guards}} (\mbox{\hyperlink{struct__Room}{Room}} $\ast$room\+\_\+p, \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$guards, \mbox{\hyperlink{struct__Vector}{Vector}} player\+\_\+start)
+\begin{DoxyCompactList}\small\item\em Initialisation of guard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Guarde module. 
+
+\begin{DoxyAuthor}{Author}
+CHERRATI Sid-\/\+Ali 
+
+MESSEANT ADRIEN 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/01/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{guard_8h_abf9971d69a14b5c11205c7aa7dca1ece}\label{guard_8h_abf9971d69a14b5c11205c7aa7dca1ece}} 
+\index{guard.h@{guard.h}!create\_guards@{create\_guards}}
+\index{create\_guards@{create\_guards}!guard.h@{guard.h}}
+\doxysubsubsection{\texorpdfstring{create\_guards()}{create\_guards()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__Guard}{Guard}} $\ast$ create\+\_\+guards (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Create a guards object. 
+
+\begin{DoxyReturn}{Returns}
+Guard$\ast$ Pointer to guard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{guard_8h_ad68c9fd26474648a3d9053dc10bff86f}\label{guard_8h_ad68c9fd26474648a3d9053dc10bff86f}} 
+\index{guard.h@{guard.h}!init\_guards@{init\_guards}}
+\index{init\_guards@{init\_guards}!guard.h@{guard.h}}
+\doxysubsubsection{\texorpdfstring{init\_guards()}{init\_guards()}}
+{\footnotesize\ttfamily void init\+\_\+guards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__Room}{Room}} $\ast$}]{room\+\_\+p,  }\item[{\mbox{\hyperlink{struct__Guard}{Guard}} $\ast$}]{guards,  }\item[{\mbox{\hyperlink{struct__Vector}{Vector}}}]{player\+\_\+start }\end{DoxyParamCaption})}
+
+
+
+Initialisation of guard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+p} & Pointer to room. \\
+\hline
+{\em guards} & Pointer to guard \\
+\hline
+{\em player\+\_\+start} & Vector of player starting coordinates \\
+\hline
+\end{DoxyParams}
